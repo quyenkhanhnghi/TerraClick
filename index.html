@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Arial", sans-serif;
+        background: #f3bd87;
+        background: linear-gradient(45deg, #f5eae0, #f8d6b4, #f6bc79, #f49325);
+        color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .weather-app {
+        width: 90%;
+        max-width: 350px;
+        text-align: center;
+      }
+      .weather-app h1 {
+        color: #333;
+        margin-bottom: 0.5em;
+      }
+      .weather-app p {
+        color: #333;
+        margin-bottom: 1em;
+      }
+      .weather-card {
+        padding: 20px;
+        margin-bottom: 1em;
+      }
+      .weather-card h2 {
+        margin: 0;
+        color: #333;
+        font-size: 1.5em;
+      }
+      .weather-card img {
+        vertical-align: middle;
+        margin-right: 10px;
+        gap: 10px;
+      }
+      .forecast {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0;
+      }
+      .forecast img {
+        vertical-align: middle;
+      }
+      .temp {
+        font-weight: bold;
+        font-size: 1.2em;
+      }
+      .temperature {
+        font-size: 2em;
+        font-weight: bold;
+      }
+      .title {
+        font-size: 3rem;
+        font-weight: bold;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+      .location {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+      .inform-weather {
+        /* border-style: solid; */
+        border-radius: 25px;
+        padding: 20px;
+        background-color: #f5e0cc;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        box-shadow: inset 0 -8px 8px -8px rgba(0, 0, 0, 0.2),
+          inset 0 8px 8px -8px rgba(0, 0, 0, 0.1);
+      }
+      .icon-weather {
+        height: auto;
+        width: 50%;
+      }
+      .text-info {
+        display: flex;
+        justify-content: space-between;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="weather-app">
+      <h1 class="title">Weather App</h1>
+      <p class="location">Tampere, Finland</p>
+      <div class="weather-card">
+        <h2>Thu, Dec 21</h2>
+        <p class="info_temperature">
+          <img
+            class="icon-weather"
+            src="image/weather.png"
+            alt="Rainy"
+            width="40"
+          />
+          <span class="temperature">19°C</span> Sunny
+        </p>
+        <div class="inform-weather">
+          <div class="text-info">
+            <img
+              class="icon-weather-info"
+              src="image/rain.png"
+              alt="Rain"
+              width="50"
+              height="50"
+            />
+            <p>Rainfall</p>
+          </div>
+          <div>
+            <p>3cm</p>
+          </div>
+        </div>
+        <div class="inform-weather">
+          <div class="text-info">
+            <img
+              class="icon-weather-info"
+              src="image/wind.png"
+              alt="Wind"
+              width="50"
+              height="50"
+            />
+            <p>Wind</p>
+          </div>
+          <div>
+            <p>19 km/h</p>
+          </div>
+        </div>
+        <div class="inform-weather">
+          <div class="text-info">
+            <img
+              class="icon-weather-info"
+              src="image/humidity.png"
+              alt="humidity"
+              width="50"
+              height="50"
+            />
+            <p>Humidity</p>
+          </div>
+          <div>
+            <p>64%</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
