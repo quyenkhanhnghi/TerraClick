@@ -1,7 +1,8 @@
 # Realtime DevOps Project: Static Website Hosting with Terraform on AWS
+
 <img width="394" alt="Screenshot 2023-12-21 at 07 30 13" src="https://github.com/quyenkhanhnghi/TerraClick/assets/108847306/2436cb82-e52c-4c2b-bc66-9454a3592bd0">
 
-
+[Demo Link HERE 🔗](https://terraclick.s3.amazonaws.com/index.html)
 ## Introduction
 
 This project demonstrates the power of Infrastructure as Code (IaC) through Terraform to provision and manage AWS resources for hosting a static website.
